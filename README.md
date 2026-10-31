@@ -1,5 +1,7 @@
 # Airplane MRO 3D — Mantiq Demo
 
+**Demo online:** [airplane-mro-3d.vercel.app](https://airplane-mro-3d.vercel.app/)
+
 Demo website MRO untuk **Cessna 208 Caravan**, menggunakan **Nuxt 4, Vue 3, TypeScript, dan Babylon.js**. Aplikasi mencakup eksplorasi komponen 3D, referensi manual PDF, temuan dengan tingkat kekritisan, pekerjaan/perbaikan dan pemeriksaan, request serta pemakaian sparepart, ringkasan pesawat, log penerbangan contoh, jadwal maintenance berulang, panduan presentasi, backup JSON, dan laporan pekerjaan PDF.
 
 ## Menjalankan aplikasi
@@ -32,7 +34,7 @@ Import repository ini, lalu pilih:
 - **Build Command:** `npm run build`
 - **Output Directory:** gunakan pengaturan bawaan framework.
 
-Aplikasi saat ini tidak memerlukan environment variable, akun, database server, atau layanan upload. Repository ini belum melakukan deployment secara otomatis.
+Aplikasi saat ini tidak memerlukan environment variable, akun, database server, atau layanan upload. Project Vercel `airplane-mro-3d` sudah terhubung ke repository ini dengan production branch `main`. Perubahan aplikasi pada branch tersebut mengikuti deploy otomatis Vercel.
 
 ## Penyimpanan data
 
