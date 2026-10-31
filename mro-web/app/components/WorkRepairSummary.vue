@@ -1,0 +1,9 @@
+<script setup lang="ts">
+import {PhClipboardText,PhArrowRight} from '@phosphor-icons/vue'
+import type { Finding } from '../types/findings'
+defineProps<{finding:Finding;disabled:boolean}>()
+defineEmits<{open:[mode:'record'|'review']}>()
+</script>
+<template>
+ <section class="work-repair-summary" aria-labelledby="work-repair-title"><h3 id="work-repair-title" class="finding-section-title"><PhClipboardText :size="17" /> Pengerjaan & pemeriksaan</h3><p class="field-help">Catat tindakan, waktu, dokumen, dan foto; ajukan hasil untuk pemeriksaan demo sebelum pekerjaan ditutup.</p><p v-if="finding.status==='awaiting_review'" class="repair-notice">Hasil sudah diajukan. Material dikunci sampai hasil diterima atau diminta pengerjaan ulang.</p><p v-if="finding.status==='rework'" class="repair-notice">Hasil perlu dikerjakan ulang. Baca catatan pemeriksa, lalu ajukan kartu pengerjaan baru.</p><button v-if="finding.status!=='closed'" type="button" class="button primary open-repair-card" :disabled="disabled" @click="$emit('open',finding.status==='awaiting_review'?'review':'record')">{{ finding.status==='awaiting_review'?'Periksa hasil':'Isi kartu pengerjaan' }}<PhArrowRight :size="16" /></button><p v-if="disabled" class="field-help">Selesaikan draf tindak lanjut sebelum membuka kartu.</p><p v-if="finding.status==='closed'&&!finding.repairCards?.length" class="field-help">Catatan lama ditutup sebelum fitur kartu pengerjaan tersedia. Riwayat aslinya tetap disimpan.</p><div class="repair-card-history"><details v-for="(card,i) in [...(finding.repairCards??[])].reverse()" :key="card.id"><summary>Kartu {{ (finding.repairCards?.length??0)-i }} · {{ card.technician }} · {{ !card.review?'Menunggu pemeriksaan':card.review.result==='accepted'?'Diterima':'Pengerjaan ulang' }}</summary><RepairCardReadout :card="card" /></details></div></section>
+</template>

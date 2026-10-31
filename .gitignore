@@ -1,0 +1,39 @@
+# Publish only the application, verification source, and repository documentation.
+/*
+!/.gitignore
+!/README.md
+!/mro-web/
+!/tools/
+
+# Dependencies and generated output.
+node_modules/
+.nuxt/
+.output/
+.vercel/
+.data/
+coverage/
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+
+# Generated PDF.js resources are recreated from the pinned npm dependency.
+/mro-web/public/pdfjs/
+/mro-web/public/models/caravan-geometry-trial.glb
+
+# Local records, browser profiles, exports and secrets never belong in Git.
+.env
+.env.*
+!.env.example
+*.backup.json
+*.sqlite
+*.sqlite3
+*.db
+*.db-*
+*.pem
+*.key
+*.blend
+*.blend1
+browser-profiles/
+playwright-report/
+test-results/

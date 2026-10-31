@@ -1,0 +1,2606 @@
+[
+  {
+    "asset_object_id": "c208-source-0001",
+    "source_object_name": "A",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0002",
+    "source_object_name": "A-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0003",
+    "source_object_name": "ADF",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0004",
+    "source_object_name": "AI.aircraft",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0005",
+    "source_object_name": "AI.aircraft.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0006",
+    "source_object_name": "AI.background",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0007",
+    "source_object_name": "AI.background.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0008",
+    "source_object_name": "AI.float",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0009",
+    "source_object_name": "AI.float.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0010",
+    "source_object_name": "AI.fond",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0011",
+    "source_object_name": "AI.fond.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0012",
+    "source_object_name": "AI.scale",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0013",
+    "source_object_name": "AI.scale.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0014",
+    "source_object_name": "AI.vitre",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0015",
+    "source_object_name": "AI.vitre.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0016",
+    "source_object_name": "ALT-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0017",
+    "source_object_name": "ALT.InhgKnob",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0018",
+    "source_object_name": "ALT.InhgKnob.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0019",
+    "source_object_name": "ALT.face",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0020",
+    "source_object_name": "ALT.face.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0021",
+    "source_object_name": "ALT.fond",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0022",
+    "source_object_name": "ALT.fond.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0023",
+    "source_object_name": "ALT.inhg",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0024",
+    "source_object_name": "ALT.inhg.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0025",
+    "source_object_name": "ALT.needle100",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0026",
+    "source_object_name": "ALT.needle100.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0027",
+    "source_object_name": "ALT.needle1000",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0028",
+    "source_object_name": "ALT.needle1000.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0029",
+    "source_object_name": "ALT.needle10000",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0030",
+    "source_object_name": "ALT.needle10000.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0031",
+    "source_object_name": "ALT.vitre",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0032",
+    "source_object_name": "ALT.vitre.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0033",
+    "source_object_name": "AP-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0034",
+    "source_object_name": "APPR-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0035",
+    "source_object_name": "ARM-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0036",
+    "source_object_name": "ASI.face",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0037",
+    "source_object_name": "ASI.face.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0038",
+    "source_object_name": "ASI.fond",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0039",
+    "source_object_name": "ASI.fond.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0040",
+    "source_object_name": "ASI.knob",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0041",
+    "source_object_name": "ASI.knob.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0042",
+    "source_object_name": "ASI.needle",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0043",
+    "source_object_name": "ASI.needle.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0044",
+    "source_object_name": "ASI.ring",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0045",
+    "source_object_name": "ASI.ring.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0046",
+    "source_object_name": "ASI.vitre",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0047",
+    "source_object_name": "ASI.vitre.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0048",
+    "source_object_name": "AUTO",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0049",
+    "source_object_name": "Airplane",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0050",
+    "source_object_name": "Airplane.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0051",
+    "source_object_name": "BC-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0052",
+    "source_object_name": "Ball",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0053",
+    "source_object_name": "Ball.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0054",
+    "source_object_name": "BallEnclosure",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0055",
+    "source_object_name": "BallEnclosure.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0056",
+    "source_object_name": "CLOCK.HourHand",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0057",
+    "source_object_name": "CLOCK.MinuteHand",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0058",
+    "source_object_name": "CLOCK.SecondHand",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0059",
+    "source_object_name": "CLOCK.button",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0060",
+    "source_object_name": "CLOCK.face",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0061",
+    "source_object_name": "CLOCK.fond",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0062",
+    "source_object_name": "CLOCK.vitre",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0063",
+    "source_object_name": "COM1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0064",
+    "source_object_name": "COM2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0065",
+    "source_object_name": "CPLD-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0066",
+    "source_object_name": "Chassis",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0067",
+    "source_object_name": "Chassis.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0068",
+    "source_object_name": "Chassis.002",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0069",
+    "source_object_name": "CommKHz",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0070",
+    "source_object_name": "CommKHz.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0071",
+    "source_object_name": "CommMHz",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0072",
+    "source_object_name": "CommMHz.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0073",
+    "source_object_name": "CommStby100K",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0074",
+    "source_object_name": "CommStby100K.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0075",
+    "source_object_name": "CommStby100M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0076",
+    "source_object_name": "CommStby100M.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0077",
+    "source_object_name": "CommStby10K",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0078",
+    "source_object_name": "CommStby10K.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0079",
+    "source_object_name": "CommStby10M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0080",
+    "source_object_name": "CommStby10M.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0081",
+    "source_object_name": "CommStby1M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0082",
+    "source_object_name": "CommStby1M.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0083",
+    "source_object_name": "CommStbyDot",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0084",
+    "source_object_name": "CommStbyDot.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0085",
+    "source_object_name": "CommToggle",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0086",
+    "source_object_name": "CommToggle.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0087",
+    "source_object_name": "CommUse100K",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0088",
+    "source_object_name": "CommUse100K.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0089",
+    "source_object_name": "CommUse100M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0090",
+    "source_object_name": "CommUse100M.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0091",
+    "source_object_name": "CommUse10K",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0092",
+    "source_object_name": "CommUse10K.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0093",
+    "source_object_name": "CommUse10M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0094",
+    "source_object_name": "CommUse10M.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0095",
+    "source_object_name": "CommUse1M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0096",
+    "source_object_name": "CommUse1M.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0097",
+    "source_object_name": "CommUseDot",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0098",
+    "source_object_name": "CommUseDot.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0099",
+    "source_object_name": "CommVolume",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0100",
+    "source_object_name": "CommVolume.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0101",
+    "source_object_name": "DME",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0102",
+    "source_object_name": "Dim.bezel",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0103",
+    "source_object_name": "Dim.toggle",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0104",
+    "source_object_name": "FD-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0105",
+    "source_object_name": "FD-annun",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0106",
+    "source_object_name": "FDannunciator",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0107",
+    "source_object_name": "GA-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0108",
+    "source_object_name": "GS-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0109",
+    "source_object_name": "Gearswitch",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0110",
+    "source_object_name": "HDG-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0111",
+    "source_object_name": "KI227.card",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0112",
+    "source_object_name": "KI227.card.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0113",
+    "source_object_name": "KI227.face",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0114",
+    "source_object_name": "KI227.face.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0115",
+    "source_object_name": "KI227.fond",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0116",
+    "source_object_name": "KI227.fond.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0117",
+    "source_object_name": "KI227.knob",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0118",
+    "source_object_name": "KI227.knob.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0119",
+    "source_object_name": "KI227.needle",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0120",
+    "source_object_name": "KI227.needle.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0121",
+    "source_object_name": "KI227.vitre",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0122",
+    "source_object_name": "KI227.vitre.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0123",
+    "source_object_name": "KI252a.CRSknob",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0124",
+    "source_object_name": "KI252a.CRSknob.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0125",
+    "source_object_name": "KI252a.From-flag",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0126",
+    "source_object_name": "KI252a.From-flag.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0127",
+    "source_object_name": "KI252a.GSneedle",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0128",
+    "source_object_name": "KI252a.GSneedle.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0129",
+    "source_object_name": "KI252a.HDGknob",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0130",
+    "source_object_name": "KI252a.HDGknob.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0131",
+    "source_object_name": "KI252a.To-flag",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0132",
+    "source_object_name": "KI252a.To-flag.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0133",
+    "source_object_name": "KI252a.compass",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0134",
+    "source_object_name": "KI252a.face",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0135",
+    "source_object_name": "KI252a.face.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0136",
+    "source_object_name": "KI252a.fond",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0137",
+    "source_object_name": "KI252a.fond.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0138",
+    "source_object_name": "KI252a.hdg-warning",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0139",
+    "source_object_name": "KI252a.hdg-warning.00",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0140",
+    "source_object_name": "KI252a.kfc-crs",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0141",
+    "source_object_name": "KI252a.kfc-crs.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0142",
+    "source_object_name": "KI252a.kfc-crs2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0143",
+    "source_object_name": "KI252a.kfc-crs2.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0144",
+    "source_object_name": "KI252a.kfc-hdgbug",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0145",
+    "source_object_name": "KI252a.kfc-hdgbug.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0146",
+    "source_object_name": "KI252a.nav-warning",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0147",
+    "source_object_name": "KI252a.nav-warning.00",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0148",
+    "source_object_name": "KI252a.vitre",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0149",
+    "source_object_name": "KI252a.vitre.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0150",
+    "source_object_name": "KRA.DHoff",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0151",
+    "source_object_name": "KRA.bug",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0152",
+    "source_object_name": "KRA.cache",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0153",
+    "source_object_name": "KRA.face",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0154",
+    "source_object_name": "KRA.fond",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0155",
+    "source_object_name": "KRA.knob",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0156",
+    "source_object_name": "KRA.needle",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0157",
+    "source_object_name": "KRA.push",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0158",
+    "source_object_name": "KRA.screws",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0159",
+    "source_object_name": "KRA.vitre",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0160",
+    "source_object_name": "Knob",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0161",
+    "source_object_name": "Kts",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0162",
+    "source_object_name": "Left.Dot",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0163",
+    "source_object_name": "LeftPedal",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0164",
+    "source_object_name": "LeftPedal.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0165",
+    "source_object_name": "M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0166",
+    "source_object_name": "M-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0167",
+    "source_object_name": "MKR",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0168",
+    "source_object_name": "Miles",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0169",
+    "source_object_name": "Min",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0170",
+    "source_object_name": "Mixture",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0171",
+    "source_object_name": "ModeSwitch",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0172",
+    "source_object_name": "NAV-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0173",
+    "source_object_name": "NAV1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0174",
+    "source_object_name": "NAV2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0175",
+    "source_object_name": "NavKHz",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0176",
+    "source_object_name": "NavKHz.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0177",
+    "source_object_name": "NavMHz",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0178",
+    "source_object_name": "NavMHz.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0179",
+    "source_object_name": "NavStby100K",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0180",
+    "source_object_name": "NavStby100K.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0181",
+    "source_object_name": "NavStby100M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0182",
+    "source_object_name": "NavStby100M.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0183",
+    "source_object_name": "NavStby10K",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0184",
+    "source_object_name": "NavStby10K.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0185",
+    "source_object_name": "NavStby10M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0186",
+    "source_object_name": "NavStby10M.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0187",
+    "source_object_name": "NavStby1M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0188",
+    "source_object_name": "NavStby1M.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0189",
+    "source_object_name": "NavStbyDot",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0190",
+    "source_object_name": "NavStbyDot.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0191",
+    "source_object_name": "NavToggle",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0192",
+    "source_object_name": "NavToggle.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0193",
+    "source_object_name": "NavUse100K",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0194",
+    "source_object_name": "NavUse100K.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0195",
+    "source_object_name": "NavUse100M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0196",
+    "source_object_name": "NavUse100M.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0197",
+    "source_object_name": "NavUse10K",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0198",
+    "source_object_name": "NavUse10K.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0199",
+    "source_object_name": "NavUse10M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0200",
+    "source_object_name": "NavUse10M.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0201",
+    "source_object_name": "NavUse1M",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0202",
+    "source_object_name": "NavUse1M.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0203",
+    "source_object_name": "NavUseDot",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0204",
+    "source_object_name": "NavUseDot.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0205",
+    "source_object_name": "NavVolume",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0206",
+    "source_object_name": "NavVolume.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0207",
+    "source_object_name": "O",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0208",
+    "source_object_name": "O-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0209",
+    "source_object_name": "Plane",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0210",
+    "source_object_name": "PropPitch",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0211",
+    "source_object_name": "RightPedal",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0212",
+    "source_object_name": "RightPedal.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0213",
+    "source_object_name": "SENS",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0214",
+    "source_object_name": "Switch",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0215",
+    "source_object_name": "Switch.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0216",
+    "source_object_name": "Switch.002",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0217",
+    "source_object_name": "TRIM-ON",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0218",
+    "source_object_name": "Throttle",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0219",
+    "source_object_name": "VOR.FR",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0220",
+    "source_object_name": "VOR.FR.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0221",
+    "source_object_name": "VOR.GlidescopeNeedle",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0222",
+    "source_object_name": "VOR.GlidescopeNeedle.",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0223",
+    "source_object_name": "VOR.LocalizerNeedle",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0224",
+    "source_object_name": "VOR.LocalizerNeedle.0",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0225",
+    "source_object_name": "VOR.NAV",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0226",
+    "source_object_name": "VOR.NAV.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0227",
+    "source_object_name": "VOR.TO",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0228",
+    "source_object_name": "VOR.TO.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0229",
+    "source_object_name": "VOR.face",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0230",
+    "source_object_name": "VOR.face.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0231",
+    "source_object_name": "VOR.fond",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0232",
+    "source_object_name": "VOR.fond.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0233",
+    "source_object_name": "VOR.knob",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0234",
+    "source_object_name": "VOR.knob.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0235",
+    "source_object_name": "VOR.ring",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0236",
+    "source_object_name": "VOR.ring.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0237",
+    "source_object_name": "VOR.visses",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0238",
+    "source_object_name": "VOR.visses.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0239",
+    "source_object_name": "VOR.vitre",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0240",
+    "source_object_name": "VOR.vitre.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0241",
+    "source_object_name": "VSI.face",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0242",
+    "source_object_name": "VSI.face.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0243",
+    "source_object_name": "VSI.fond",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0244",
+    "source_object_name": "VSI.fond.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0245",
+    "source_object_name": "VSI.needle",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0246",
+    "source_object_name": "VSI.needle.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0247",
+    "source_object_name": "VSI.vitre",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0248",
+    "source_object_name": "VSI.vitre.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0249",
+    "source_object_name": "Yoke",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0250",
+    "source_object_name": "Yoke.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0251",
+    "source_object_name": "aileronD",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0252",
+    "source_object_name": "aileronD2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0253",
+    "source_object_name": "aileronG",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0254",
+    "source_object_name": "aileronG2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0255",
+    "source_object_name": "ailes",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0256",
+    "source_object_name": "ailes2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0257",
+    "source_object_name": "ailettes",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0258",
+    "source_object_name": "alt",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0259",
+    "source_object_name": "alt-dig-1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0260",
+    "source_object_name": "alt-dig-2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0261",
+    "source_object_name": "alt-dig-3",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0262",
+    "source_object_name": "antennes",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0263",
+    "source_object_name": "articuleAB",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0264",
+    "source_object_name": "articuleAH",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0265",
+    "source_object_name": "axeAB",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0266",
+    "source_object_name": "axeAH",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0267",
+    "source_object_name": "axes",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0268",
+    "source_object_name": "barres",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0269",
+    "source_object_name": "barres.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0270",
+    "source_object_name": "base",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0271",
+    "source_object_name": "base.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0272",
+    "source_object_name": "base.002",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0273",
+    "source_object_name": "bol",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0274",
+    "source_object_name": "bulbe",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0275",
+    "source_object_name": "button",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0276",
+    "source_object_name": "button_panel",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0277",
+    "source_object_name": "digit1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0278",
+    "source_object_name": "digit2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0279",
+    "source_object_name": "digit3",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0280",
+    "source_object_name": "digit4",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0281",
+    "source_object_name": "direction",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0282",
+    "source_object_name": "echappe",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0283",
+    "source_object_name": "face",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0284",
+    "source_object_name": "face.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0285",
+    "source_object_name": "face.002",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0286",
+    "source_object_name": "face.003",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0287",
+    "source_object_name": "face.004",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0288",
+    "source_object_name": "face.005",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0289",
+    "source_object_name": "face.006",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0290",
+    "source_object_name": "face.007",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0291",
+    "source_object_name": "face.008",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0292",
+    "source_object_name": "face.009",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0293",
+    "source_object_name": "face.010",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0294",
+    "source_object_name": "face.011",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0295",
+    "source_object_name": "face.012",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0296",
+    "source_object_name": "feuille",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0297",
+    "source_object_name": "fl",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0298",
+    "source_object_name": "fond",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0299",
+    "source_object_name": "fond.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0300",
+    "source_object_name": "fond.002",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0301",
+    "source_object_name": "fond.003",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0302",
+    "source_object_name": "fond.004",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0303",
+    "source_object_name": "fond.005",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0304",
+    "source_object_name": "fond.006",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0305",
+    "source_object_name": "fond.007",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0306",
+    "source_object_name": "fond.008",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0307",
+    "source_object_name": "fond.009",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0308",
+    "source_object_name": "fond.010",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0309",
+    "source_object_name": "fond.011",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0310",
+    "source_object_name": "fond.012",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0311",
+    "source_object_name": "fond.013",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0312",
+    "source_object_name": "fond.014",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0313",
+    "source_object_name": "fond.015",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0314",
+    "source_object_name": "fuselage",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0315",
+    "source_object_name": "gnd",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0316",
+    "source_object_name": "helice",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0317",
+    "source_object_name": "ident-btn",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0318",
+    "source_object_name": "info",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0319",
+    "source_object_name": "info.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0320",
+    "source_object_name": "info.002",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0321",
+    "source_object_name": "interieur",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0322",
+    "source_object_name": "intporteAD",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0323",
+    "source_object_name": "intporteAG",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0324",
+    "source_object_name": "intporteB",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0325",
+    "source_object_name": "intporteH",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0326",
+    "source_object_name": "inttour",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0327",
+    "source_object_name": "inttourporte",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0328",
+    "source_object_name": "inttourporteAD",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0329",
+    "source_object_name": "inttourporteAD2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0330",
+    "source_object_name": "inttourporteAG",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0331",
+    "source_object_name": "inttourporteAG2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0332",
+    "source_object_name": "inttourporteB",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0333",
+    "source_object_name": "inttourporteH",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0334",
+    "source_object_name": "intvitreporte",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0335",
+    "source_object_name": "intvitreporteAD",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0336",
+    "source_object_name": "intvitreporteAG",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0337",
+    "source_object_name": "intvitres",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0338",
+    "source_object_name": "knob0",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0339",
+    "source_object_name": "knob1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0340",
+    "source_object_name": "knob2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0341",
+    "source_object_name": "knob3",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0342",
+    "source_object_name": "knob4",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0343",
+    "source_object_name": "lampes",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0344",
+    "source_object_name": "lampetrs",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0345",
+    "source_object_name": "lampetrsD",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0346",
+    "source_object_name": "lampetrsG",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0347",
+    "source_object_name": "left.1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0348",
+    "source_object_name": "left.10",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0349",
+    "source_object_name": "left.100",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0350",
+    "source_object_name": "maindn1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0351",
+    "source_object_name": "maindn2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0352",
+    "source_object_name": "mainup1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0353",
+    "source_object_name": "mainup2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0354",
+    "source_object_name": "needle",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0355",
+    "source_object_name": "needle.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0356",
+    "source_object_name": "needle.002",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0357",
+    "source_object_name": "needle.003",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0358",
+    "source_object_name": "needle.004",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0359",
+    "source_object_name": "needle.005",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0360",
+    "source_object_name": "needle.006",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0361",
+    "source_object_name": "needle.007",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0362",
+    "source_object_name": "needle1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0363",
+    "source_object_name": "needle2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0364",
+    "source_object_name": "nosedn1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0365",
+    "source_object_name": "nosedn2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0366",
+    "source_object_name": "noseup1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0367",
+    "source_object_name": "noseup2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0368",
+    "source_object_name": "on",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0369",
+    "source_object_name": "panel",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0370",
+    "source_object_name": "panel2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0371",
+    "source_object_name": "panel3",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0372",
+    "source_object_name": "pito",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0373",
+    "source_object_name": "planchet",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0374",
+    "source_object_name": "plane",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0375",
+    "source_object_name": "porteAD",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0376",
+    "source_object_name": "porteAG",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0377",
+    "source_object_name": "porteB",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0378",
+    "source_object_name": "porteH",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0379",
+    "source_object_name": "profondeur",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0380",
+    "source_object_name": "pump",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0381",
+    "source_object_name": "reply",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0382",
+    "source_object_name": "right.1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0383",
+    "source_object_name": "right.10",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0384",
+    "source_object_name": "right.100",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0385",
+    "source_object_name": "rose",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0386",
+    "source_object_name": "roueA",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0387",
+    "source_object_name": "roueD",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0388",
+    "source_object_name": "roueG",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0389",
+    "source_object_name": "sby",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0390",
+    "source_object_name": "sieges",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0391",
+    "source_object_name": "sieges.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0392",
+    "source_object_name": "sieges.002",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0393",
+    "source_object_name": "sieges.003",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0394",
+    "source_object_name": "sieges.004",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0395",
+    "source_object_name": "sieges.005",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0396",
+    "source_object_name": "sieges.006",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0397",
+    "source_object_name": "sieges.007",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0398",
+    "source_object_name": "sieges.008",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0399",
+    "source_object_name": "sieges.009",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0400",
+    "source_object_name": "souslampes",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0401",
+    "source_object_name": "sousnez",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0402",
+    "source_object_name": "tank",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0403",
+    "source_object_name": "tank.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0404",
+    "source_object_name": "tank.002",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0405",
+    "source_object_name": "tank.003",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0406",
+    "source_object_name": "trb",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0407",
+    "source_object_name": "trb.1",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0408",
+    "source_object_name": "trb.2",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0409",
+    "source_object_name": "trb.3",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0410",
+    "source_object_name": "trb.4",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0411",
+    "source_object_name": "trous",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0412",
+    "source_object_name": "vfr-btn",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0413",
+    "source_object_name": "visses",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0414",
+    "source_object_name": "vitre",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0415",
+    "source_object_name": "vitre.001",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0416",
+    "source_object_name": "vitre.002",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0417",
+    "source_object_name": "vitre.003",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0418",
+    "source_object_name": "vitre.004",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0419",
+    "source_object_name": "vitre.005",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0420",
+    "source_object_name": "vitre.006",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0421",
+    "source_object_name": "vitre.007",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0422",
+    "source_object_name": "vitre.008",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0423",
+    "source_object_name": "vitre.009",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0424",
+    "source_object_name": "vitre.010",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0425",
+    "source_object_name": "vitre.011",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0426",
+    "source_object_name": "vitre.012",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0427",
+    "source_object_name": "vitre.013",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0428",
+    "source_object_name": "vitre.014",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0429",
+    "source_object_name": "vitres",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0430",
+    "source_object_name": "vitresAD",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0431",
+    "source_object_name": "vitresAG",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0432",
+    "source_object_name": "vitresporte",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0433",
+    "source_object_name": "voletD",
+    "component_id": null,
+    "mapping_status": "unverified"
+  },
+  {
+    "asset_object_id": "c208-source-0434",
+    "source_object_name": "voletG",
+    "component_id": null,
+    "mapping_status": "unverified"
+  }
+]

@@ -1,0 +1,131 @@
+"""Clickable dashboard, guided real repair workflow and tablet/failure recovery."""
+import json,os,subprocess
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];REPORT=ROOT/'reports/phase-13'
+URL=os.environ.get('MRO_VERIFY_URL','http://127.0.0.1:3100');PROD=':3101' in URL
+checks=[];completed=False
+
+def cli(*args,script=None):
+ p=subprocess.run(['agent-browser','--session','mro-dashboard13','--json',*args],input=script,text=True,capture_output=True,timeout=60)
+ if p.returncode:raise RuntimeError(p.stdout+p.stderr)
+ r=json.loads(p.stdout)
+ if not r['success']:raise RuntimeError(r)
+ return r['data']
+def js(s):return cli('eval','--stdin',script=s)['result']
+def wait(s):cli('wait','--fn',s)
+def click(s):cli('scrollintoview',s);cli('click',s)
+def check(name,value,detail=None):
+ checks.append(dict(name=name,passed=bool(value),detail=detail));print(('PASS ' if value else 'FAIL ')+name,flush=True)
+ if not value:raise AssertionError((name,detail))
+def tab(name):click('#workspace-tab-'+name);wait(f"document.querySelector('#workspace-tab-{name}').getAttribute('aria-selected')==='true'")
+def shot(name):cli('screenshot',str(REPORT/(('production-' if PROD else '')+name)))
+def rows(space='scenario'):
+ return js("new Promise((resolve,reject)=>{let q=indexedDB.open("+json.dumps('mro-visual-scenario-v1' if space=='scenario' else 'mro-visual-findings-demo')+",1);q.onsuccess=()=>{let db=q.result,t=db.transaction('findings','readonly'),r=t.objectStore('findings').getAll();t.oncomplete=()=>{db.close();resolve(r.result.map(f=>({...f,photos:f.photos.map(p=>({id:p.id,name:p.name,bytes:p.blob.size}))})))}};q.onerror=()=>reject(q.error)})")
+def wheel():return next(f for f in rows() if f['id']=='scenario-roueG')
+def metric(name):return js('document.querySelector('+json.dumps('[data-summary='+name+'] strong')+').textContent')
+def guide(index,act=True):
+ click('[data-guide-step='+json.dumps(str(index))+']')
+ if act:click('.guide-action')
+def save_material():click('.material-dialog button[type=submit]');wait("!document.querySelector('.material-dialog').open")
+def material_note():cli('fill','[name=request-note]','Catatan transaksi material untuk presentasi terpandu.')
+def close_detail():click('[aria-label="Tutup detail temuan"]');wait("!document.querySelector('.detail-dialog').open")
+try:
+ cli('--executable-path','/home/kartesiusw/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome','--args','--enable-unsafe-swiftshader','open',URL)
+ cli('set','viewport','1440','1000');wait("document.querySelector('.canvas-wrap')?.dataset.ready==='true' && !!document.querySelector('.dashboard-page')")
+ js("localStorage.setItem('mro-color-theme','light');localStorage.setItem('mro-presentation-space','practice');Promise.all(['mro-visual-findings-demo','mro-visual-scenario-v1'].map(name=>new Promise((resolve,reject)=>{let q=indexedDB.deleteDatabase(name);q.onsuccess=()=>resolve(true);q.onerror=()=>reject(q.error)})))")
+ cli('reload');wait("document.querySelector('.canvas-wrap')?.dataset.ready==='true' && document.querySelector('[data-summary=active] strong')?.textContent==='0'")
+ check('Dashboard is the initial tab and all seven workspaces remain reachable',js("document.querySelector('#workspace-tab-dashboard').getAttribute('aria-selected')==='true' && document.querySelectorAll('.workspace-tabs [role=tab]').length===7"))
+ check('Empty notebook displays zero work and actionable demo/model entry points',metric('active')=='0' and js("!!document.querySelector('.dashboard-empty .button') && document.querySelector('.dashboard-utilization').textContent.includes('2.000')"));shot('dashboard-empty.png')
+ # Verify that local storage failures produce a clear state, never zero-looking success.
+ js("window.__tx=IDBDatabase.prototype.transaction;IDBDatabase.prototype.transaction=function(){throw new DOMException('Storage test unavailable','InvalidStateError')};document.dispatchEvent(new Event('visibilitychange'));true")
+ wait("!!document.querySelector('.dashboard-storage-error')")
+ check('Unavailable storage shows an error and disables work metrics with unknown counts',metric('active')=='—' and js("document.querySelector('[data-summary=active]').disabled"))
+ js("IDBDatabase.prototype.transaction=window.__tx;true");click('.dashboard-storage-error .button');wait("document.querySelector('[data-summary=active] strong').textContent==='0'")
+ # Isolated practice sentinel, legacy high priority without severity.
+ js("new Promise((resolve,reject)=>{let q=indexedDB.open('mro-visual-findings-demo',1);q.onsuccess=()=>{let db=q.result,t=db.transaction('findings','readwrite');t.objectStore('findings').put({id:'practice-sentinel',aircraftId:'cessna-208-demo',assetId:'c208-source-0388',sourceName:'roueG',componentLabel:'Roda utama kiri',title:'Latihan lama prioritas tinggi',description:'Pengamatan lama yang belum dinilai kekritisannya.',category:'inspection',priority:'high',status:'open',createdAt:'2026-10-31T01:00:00Z',updatedAt:'2026-10-31T01:00:00Z',revision:1,photos:[],history:[]});t.oncomplete=()=>{db.close();resolve(true)};t.onerror=()=>reject(t.error)}})")
+ js("document.dispatchEvent(new Event('visibilitychange'));true");wait("document.querySelector('[data-summary=active] strong').textContent==='1'")
+ check('Legacy high priority remains unassessed and is excluded from high/critical count',metric('urgent')=='0' and js("document.querySelector('.dashboard-severities [data-severity=unassessed] strong').textContent==='1'"))
+ practice=rows('practice')
+ click('[data-summary=urgent]');wait("document.querySelector('[aria-label=\"Filter kekritisan pekerjaan\"]').value==='urgent'")
+ check('Zero urgency link opens exactly the matching empty filter',js("document.querySelector('[aria-label=\"Filter status pekerjaan\"]').value==='active' && document.querySelectorAll('.work-record').length===0"))
+ tab('dashboard');click('.dashboard-empty .button') if js("!!document.querySelector('.dashboard-empty .button')") else click('.demo-launch')
+ wait("document.querySelector('.demo-dialog').open");click('.demo-dialog .button.primary');wait("!document.querySelector('.demo-dialog').open && !!document.querySelector('.presentation-guide') && document.querySelector('[data-summary=active] strong').textContent==='2'")
+ check('Presentation dashboard counts only its two active findings and one assessed urgent finding',metric('active')=='2' and metric('urgent')=='1' and metric('review')=='0')
+ check('Global six-step guide appears and never mutates practice data',js("document.querySelectorAll('[data-guide-step]').length===6") and rows('practice')==practice);shot('dashboard-presentation.png')
+ click('[data-summary=active]');wait("document.querySelectorAll('.work-record').length===2")
+ check('Active metric excludes closed propeller and resets previous work filters',js("document.querySelector('[aria-label=\"Filter kekritisan pekerjaan\"]').value==='all' && !document.querySelector('[data-finding-id=scenario-helice]')"))
+ tab('dashboard');click('.dashboard-severities [data-severity=medium]');wait("document.querySelectorAll('.work-record').length===1")
+ check('Severity chip opens matching active work',js("!!document.querySelector('[data-finding-id=scenario-porteAG]')"))
+ tab('dashboard');click('.dashboard-maintenance-link');wait("document.querySelector('[aria-label=\"Filter status maintenance\"]').value==='attention'")
+ check('Maintenance summary opens the due/soon plans only',js("document.querySelectorAll('.maintenance-plan').length===2"))
+ tab('dashboard');click('.dashboard-material-links>button:last-child');wait("document.querySelector('[aria-label=\"Filter stok sparepart\"]').value==='attention'")
+ check('Stock attention link opens exactly the three low/empty catalog items',js("document.querySelectorAll('.inventory-table tbody tr').length===3"))
+ tab('dashboard');click('.dashboard-utilization .button');wait("document.querySelector('#workspace-tab-flights').getAttribute('aria-selected')==='true'")
+ check('Utilization links to flight history',js("!!document.querySelector('.flight-page, .flights-page')"))
+ guide(0);wait("document.querySelector('#workspace-tab-aircraft').getAttribute('aria-selected')==='true'")
+ check('Guide selects the exact source component on the 3D aircraft',js("document.querySelector('.selected-title')?.textContent==='Roda utama kiri' && document.querySelector('[data-guide-step=\"0\"]').classList.contains('fulfilled')"))
+ guide(2);wait("document.querySelector('.material-dialog').open")
+ cli('select','[name=request-part]','inv-01');cli('fill','[name=request-quantity]','1');material_note();save_material()
+ check('Guide creates a real material request in the selected presentation job',wheel()['materialRequests'][0]['status']=='requested')
+ tab('dashboard');wait("document.querySelector('[data-summary=materials] strong').textContent==='1'")
+ click('[data-summary=materials]');wait("document.querySelector('[aria-label=\"Filter permintaan sparepart\"]').value==='pending'")
+ check('Material metric lists the same pending request count',js("document.querySelectorAll('.material-request-card').length===1"))
+ guide(2);wait("document.querySelector('[aria-label=\"Filter permintaan sparepart\"]').value==='all'")
+ check('Guide keeps work context when navigating into the sparepart queue',js("!!document.querySelector('.queue-work-filter') && document.querySelectorAll('.material-request-card').length===1"))
+ for action in ['prepare','issue']:
+  click('.material-request-card .'+action+'-material');wait("document.querySelector('.material-dialog').open");material_note();save_material()
+  if action=='prepare':check('Prepared stage updates the dashboard without duplicated demand',metric('materials')=='1' and js("document.querySelector('.dashboard-material-links>button:nth-child(2) strong').textContent==='1'"))
+ check('Issued but unaccounted material stays pending in the dashboard',metric('materials')=='1' and js("document.querySelector('.dashboard-material-links>button:nth-child(3) strong').textContent==='1'"))
+ guide(3);check('Guide directs unfinished material back to its queue before repair',js("document.querySelector('#workspace-tab-inventory').getAttribute('aria-selected')==='true' && !document.querySelector('.repair-dialog').open && !document.querySelector('.detail-dialog').open"))
+ click('.use-material');wait("document.querySelector('.material-dialog').open");cli('fill','[name=material-actor]','Teknisi Panduan');material_note();save_material()
+ check('Completed part usage clears pending demand and fulfills the material step',metric('materials')=='0' and js("document.querySelector('[data-guide-step=\"2\"]').classList.contains('fulfilled')"))
+ guide(3);wait("document.querySelector('.detail-dialog').open");cli('select','[name=finding-status]','in_progress');cli('fill','[name=status-note]','Mulai tindak lanjut dalam presentasi terpandu.');click('.status-update-form button[type=submit]');wait("!!document.querySelector('.detail-dialog .save-success')");close_detail()
+ guide(3);wait("document.querySelector('.repair-dialog').open");cli('fill','[name=repair-technician]','Teknisi Panduan');cli('fill','[name=repair-actions]','Simulasi pengerjaan roda; foto sebelum dan sesudah menggunakan ilustrasi model.');cli('fill','[name=repair-reference]','Dokumen skenario demo, rev 1. Bukan prosedur perawatan.')
+ cli('upload','[aria-label="Foto sesudah pengerjaan"]',str(ROOT/'mro-web/public/demo/ilustrasi-roueG.jpg'));wait("document.querySelectorAll('[data-stage=after] figure').length===1");click('.repair-dialog button[type=submit]');wait("!document.querySelector('.repair-dialog').open")
+ check('Real repair submission updates guide and review metric',metric('review')=='1' and wheel()['status']=='awaiting_review')
+ tab('dashboard');click('[data-summary=review]');wait("document.querySelectorAll('.work-record').length===1")
+ check('Review metric opens the exact job awaiting examination',js("!!document.querySelector('[data-finding-id=scenario-roueG]')"))
+ guide(4);wait("document.querySelector('.repair-dialog').open");cli('fill','[name=repair-inspector]','Pemeriksa Panduan');cli('fill','[name=repair-review-note]','Catatan, bukti foto, dan material simulasi telah ditinjau.')
+ for key in ['record','photos','materials']:cli('check','[name=review-check-'+key+']')
+ click('.repair-dialog button[type=submit]');wait("!document.querySelector('.repair-dialog').open")
+ check('Examiner acceptance closes the job and removes it from active urgency',wheel()['status']=='closed' and metric('active')=='1' and metric('urgent')=='0' and metric('review')=='0')
+ guide(5);wait("document.querySelector('.detail-dialog').open")
+ js("window.__guideDownloads=[];window.__downloadClick=HTMLAnchorElement.prototype.click;HTMLAnchorElement.prototype.click=function(){if(this.download)window.__guideDownloads.push(this.download);return window.__downloadClick.call(this)};true")
+ click('.export-work-report');wait("!!document.querySelector('.work-report-export .save-success')")
+ check('Guide report progress is set only after a real PDF download starts',js("window.__guideDownloads.some(n=>n.endsWith('.pdf')) && document.querySelector('[data-guide-step=\"5\"]').classList.contains('fulfilled')"));close_detail()
+ check('All six steps fulfill from real saved work and the current PDF export',js("document.querySelectorAll('[data-guide-step].fulfilled').length===6 && document.querySelector('#guide-title').textContent==='Alur pekerjaan lengkap'"));shot('guide-complete.png')
+ # Responsive checks keep actions reachable without covering the aircraft.
+ cli('set','viewport','1024','768');tab('dashboard');click('.guide-toggle');wait("document.querySelector('.guide-toggle').getAttribute('aria-expanded')==='false'")
+ check('Tablet dashboard has no horizontal overflow and keeps large summary targets',js("document.documentElement.scrollWidth<=innerWidth && [...document.querySelectorAll('.dashboard-metrics>button')].every(e=>e.getBoundingClientRect().height>=44)"));shot('dashboard-tablet.png')
+ click('.guide-toggle');check('Tablet guide has a readable target picker and scrollable step controls',js("parseFloat(getComputedStyle(document.querySelector('[aria-label=\"Pekerjaan panduan\"]')).fontSize)>=16 && document.querySelector('.guide-action').getBoundingClientRect().height>=44"));shot('guide-tablet.png')
+ click('.guide-toggle');click('.theme-toggle');cli('set','viewport','390','844')
+ check('Dark phone dashboard and compact guide fit the viewport',js("document.documentElement.scrollWidth<=innerWidth && document.documentElement.dataset.theme==='dark'"));shot('dashboard-dark-mobile.png')
+ click('.guide-toggle');guide(1,False);check('Phone guide actions remain reachable inside its scrollable panel',js("document.documentElement.scrollWidth<=innerWidth && document.querySelector('.guide-create').getBoundingClientRect().height>=44"));shot('guide-dark-mobile.png')
+ # A user-created finding becomes the guide target, without seeding or modifying any other work.
+ click('.guide-create');wait("!!document.querySelector('dialog[open] [name=finding-title]')");cli('fill','[name=finding-title]','Pengamatan baru dari panduan');cli('fill','[name=finding-description]','Pengamatan simulasi baru untuk menguji fokus pekerjaan panduan.');cli('select','[name=finding-severity]','critical');click('dialog[open] button[type=submit]');wait("!document.querySelector('dialog[open]')")
+ check('New guided observation becomes the selected work and has fresh incomplete progress',js("document.querySelector('[aria-label=\"Pekerjaan panduan\"] option:checked').textContent==='Pengamatan baru dari panduan' && !document.querySelector('[data-guide-step=\"5\"]').classList.contains('fulfilled')") and len(rows())==4)
+ cli('reload');wait("document.querySelector('.canvas-wrap')?.dataset.ready==='true' && document.querySelector('[data-summary=active] strong')?.textContent==='2'")
+ check('Dashboard rehydrates saved scenario transactions and work after reload',metric('urgent')=='1' and wheel()['status']=='closed' and len(wheel()['repairCards'])==1)
+ check('PDF progress is session-only and never claims a download after reload',js("!document.querySelector('[data-guide-step=\"5\"]').classList.contains('fulfilled')"))
+ # Reset/return must clear context filters and leave the original practice notebook intact.
+ click('.demo-launch');wait("document.querySelector('.demo-dialog').open");click('.demo-dialog .dialog-footer .button:not(.primary)');wait("!document.querySelector('.demo-dialog').open && !document.querySelector('.presentation-guide')")
+ check('Returning to practice preserves original records and removes the presentation guide',rows('practice')==practice and metric('active')=='1' and metric('urgent')=='0')
+ tab('inventory');check('Cross-mode navigation never leaves a hidden scenario work filter',not js("!!document.querySelector('.queue-work-filter')"))
+ # Existing asset error recovery remains accessible from the new default dashboard.
+ cli('set','viewport','1024','768');cli('network','route',URL+'/models/caravan-demo.glb','--abort');cli('reload');wait("!!document.querySelector('.viewer-error')")
+ tab('dashboard');click('.dashboard-view-model');check('A failed 3D model still has a reachable retry screen from the dashboard',js("document.querySelector('#workspace-tab-aircraft').getAttribute('aria-selected')==='true' && !!document.querySelector('.viewer-error .button')"))
+ cli('network','unroute',URL+'/models/caravan-demo.glb');click('.viewer-error .button');wait("document.querySelector('.canvas-wrap')?.dataset.ready==='true'")
+ check('Model retry restores all 434 objects without changing saved work',js("document.querySelector('.canvas-wrap').dataset.visibleMeshes==='434'") and rows('practice')==practice)
+ cli('network','route',URL+'/manuals/c208-poh-training-1998.pdf','--abort');tab('manuals');wait("!!document.querySelector('.pdf-error')")
+ check('Manual failure shows a readable retry action on tablet',js("document.querySelector('.pdf-error .button').getBoundingClientRect().height>=44"))
+ cli('network','unroute',URL+'/manuals/c208-poh-training-1998.pdf');click('.pdf-error .button');wait("document.querySelector('.pdf-reader')?.dataset.renderedPage==='79'")
+ check('Manual retry renders the requested page without reloading the app',True)
+ errors=cli('errors');check('No uncaught browser errors',not errors.get('errors'),errors)
+ completed=True
+finally:
+ if not completed:
+  try:shot('failure.png')
+  except Exception:pass
+ (REPORT/('production-dashboard-ui.json' if PROD else 'dashboard-ui.json')).write_text(json.dumps(dict(completed=completed,url=URL,checks=checks),indent=2)+'\n')
+ print(f'{sum(c["passed"] for c in checks)}/{len(checks)} checks passed; completed={completed}',flush=True)
+ cli('close')

@@ -1,0 +1,11 @@
+{
+  "meshes": 434,
+  "triangles": 80695,
+  "textured_objects": 392,
+  "image_count": 28,
+  "material_count": 32,
+  "bytes": 7038012,
+  "material_mode": "Tekstur sumber dipulihkan",
+  "provenance": "Source texture atlas and exact per-face image assignments, not AMA livery.",
+  "limitations": "Glass alpha retained from source; not a measured optical material. Engineering scale/configuration unverified."
+}

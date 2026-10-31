@@ -1,0 +1,38 @@
+.severity-unassessed{--severity-ink:#4b5e73;--severity-bg:#edf0f5;--severity-color:#94a3b8}
+.severity-low{--severity-ink:#715400;--severity-bg:#fff5d1;--severity-color:#f2c230}
+.severity-medium{--severity-ink:#914200;--severity-bg:#fff0e1;--severity-color:#ff8c1a}
+.severity-high{--severity-ink:#a12d22;--severity-bg:#ffebe7;--severity-color:#ff493b}
+.severity-critical{--severity-ink:#8b153d;--severity-bg:#fce5ec;--severity-color:#c02655}
+[data-theme="dark"] .severity-unassessed{--severity-ink:#b5c7d8;--severity-bg:#24313c}
+[data-theme="dark"] .severity-low{--severity-ink:#f3d16b;--severity-bg:#3c341b}
+[data-theme="dark"] .severity-medium{--severity-ink:#ffb36a;--severity-bg:#452e1d}
+[data-theme="dark"] .severity-high{--severity-ink:#ffaaa0;--severity-bg:#442724}
+[data-theme="dark"] .severity-critical{--severity-ink:#ff9abf;--severity-bg:#432132}
+.severity-badge{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:600;line-height:1.6;padding:4px 7px;border:1px solid var(--line);border-radius:5px;color:var(--severity-ink);background:var(--severity-bg);max-width:100%}
+.severity-dot{display:inline-block;width:7px;height:7px;flex-shrink:0;border-radius:50%;background:var(--severity-color)}
+.severity-critical .severity-dot{border-radius:1px;transform:rotate(45deg)}
+.severity-unassessed .severity-dot{background:transparent;border:1px dashed var(--severity-ink)}
+.finding-count[class*="severity-"]{background:var(--severity-bg);color:var(--severity-ink);border:1px solid var(--severity-color)}
+.component-severity-summary{display:flex;align-items:flex-start;flex-direction:column;gap:6px;margin:15px 0}
+.component-severity-summary>span:not(.severity-badge),.component-severity-summary>small{font-size:10px;color:var(--muted);line-height:1.7}
+.component-finding-list .severity-badge,.overview-records .severity-badge{margin:5px 0 0 5px}
+.severity-form-preview{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:-5px 0 20px}
+.severity-form-preview>span:not(.severity-badge){color:var(--muted);font-size:10px;line-height:1.7}
+.finding-history .severity-history-line{color:var(--accent-text);font-size:10px}
+.finding-legend.severity-legend{display:block;pointer-events:auto;padding:0;background:var(--surface-raised);border-color:var(--line);color:var(--ink);z-index:3;max-width:calc(100% - 36px)}
+.severity-legend summary{display:flex;align-items:center;gap:7px;padding:8px 10px;cursor:pointer;font-size:10px;min-height:34px;list-style:none;user-select:none}
+.severity-legend summary::-webkit-details-marker{display:none}
+.severity-legend summary>svg{flex-shrink:0;color:var(--accent-text)}
+.severity-legend summary>svg:last-child{margin-left:auto}
+.severity-legend[open] summary>svg:last-child{transform:rotate(180deg)}
+.severity-legend-content{position:absolute;top:calc(100% + 6px);left:0;width:295px;max-width:calc(100vw - 50px);padding:15px;border:1px solid var(--line);border-radius:8px;background:var(--surface-raised);box-shadow:var(--shadow);color:var(--ink)}
+.severity-legend-content>strong{display:block;font-size:12px;margin-bottom:12px}
+.severity-legend-content>div{margin:7px 0}.severity-legend-content>p{font-size:10px;line-height:1.8;color:var(--muted);margin-top:12px}
+.overview-filters{grid-template-columns:minmax(0,1fr) 135px 135px}
+.work-page .operations-filters{flex-wrap:wrap}
+.work-page .operations-filters .operations-search{min-width:210px}
+@media(max-width:1180px) and (min-width:681px){.severity-legend summary{font-size:11px;min-height:44px}.overview-filters{grid-template-columns:1fr 1fr}.overview-filters .form-field:first-child{grid-column:1/-1}}
+@media(max-width:680px){.severity-badge{font-size:11px}.severity-legend summary{font-size:10px;min-height:40px}.overview-filters{grid-template-columns:1fr}.work-page .operations-filters .operations-search{min-width:0}.severity-legend-content{width:270px}}
+.severity-legend-content{max-height:320px;overflow:auto;overscroll-behavior:contain}
+@media(max-width:1180px) and (min-width:681px){.severity-legend-content{max-height:180px}}
+@media(max-width:680px){.severity-legend-content{max-height:150px}}
